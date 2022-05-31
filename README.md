@@ -14,10 +14,10 @@
 - [x] unplugin-vue-components(组件按需导入)
 - [x] sass
     - [x] atomic css style
-- [ ] unplugin-auto-import(API 按需导入)
+- [x] unplugin-auto-import(API 按需导入)
     - [ ] 全局工具函数
     - [ ] vueuse api
-    - [ ] vue api
+    - [x] vue api
 - [ ] vue-echarts
 
 ## 为什么使用 pnpm?

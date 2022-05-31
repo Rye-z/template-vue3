@@ -6,6 +6,7 @@ specifiers:
   '@vue/cli-plugin-router': ~5.0.0
   '@vue/cli-plugin-typescript': ~5.0.0
   '@vue/cli-service': ~5.0.0
+  '@vueuse/core': ^8.5.0
   axios: ^0.27.2
   core-js: ^3.8.3
   element-plus: ^2.2.2
@@ -20,6 +21,7 @@ specifiers:
   vue-router: ^4.0.3
 
 dependencies:
+  '@vueuse/core': registry.npmmirror.com/@vueuse/core/8.5.0_vue@3.2.36
   axios: registry.npmmirror.com/axios/0.27.2
   core-js: registry.npmmirror.com/core-js/3.22.7
   element-plus: registry.npmmirror.com/element-plus/2.2.2_vue@3.2.36
@@ -37,7 +39,7 @@ devDependencies:
   sass: registry.npmmirror.com/sass/1.52.1
   sass-loader: registry.npmmirror.com/sass-loader/12.6.0_sass@1.52.1
   typescript: registry.npmmirror.com/typescript/4.5.5
-  unplugin-auto-import: registry.npmmirror.com/unplugin-auto-import/0.8.6
+  unplugin-auto-import: registry.npmmirror.com/unplugin-auto-import/0.8.6_@vueuse+core@8.5.0
   unplugin-vue-components: registry.npmmirror.com/unplugin-vue-components/0.19.6_vue@3.2.36
 
 packages:
@@ -3294,7 +3296,7 @@ packages:
     name: axios
     version: 0.27.2
     dependencies:
-      follow-redirects: registry.npmmirror.com/follow-redirects/1.15.1_debug@4.3.4
+      follow-redirects: registry.npmmirror.com/follow-redirects/1.15.1
       form-data: registry.npmmirror.com/form-data/4.0.0
     transitivePeerDependencies:
       - debug
@@ -5331,9 +5333,8 @@ packages:
     version: 3.2.5
     dev: true
 
-  registry.npmmirror.com/follow-redirects/1.15.1_debug@4.3.4:
+  registry.npmmirror.com/follow-redirects/1.15.1:
     resolution: {integrity: sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA==, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/follow-redirects/-/follow-redirects-1.15.1.tgz}
-    id: registry.npmmirror.com/follow-redirects/1.15.1
     name: follow-redirects
     version: 1.15.1
     engines: {node: '>=4.0'}
@@ -5342,8 +5343,6 @@ packages:
     peerDependenciesMeta:
       debug:
         optional: true
-    dependencies:
-      debug: registry.npmmirror.com/debug/4.3.4
 
   registry.npmmirror.com/fork-ts-checker-webpack-plugin/6.5.2_6574a3232f15c572f51a25dc32487de9:
     resolution: {integrity: sha512-m5cUmF30xkZ7h4tWUgTAcEaKmUW7tfyUyTqNNOz7OxWJ0v1VWKTcOvH8FWHUwSjlW/356Ijc9vi3XfcPstpQKA==, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/fork-ts-checker-webpack-plugin/-/fork-ts-checker-webpack-plugin-6.5.2.tgz}
@@ -5857,7 +5856,7 @@ packages:
     engines: {node: '>=8.0.0'}
     dependencies:
       eventemitter3: registry.npmmirror.com/eventemitter3/4.0.7
-      follow-redirects: registry.npmmirror.com/follow-redirects/1.15.1_debug@4.3.4
+      follow-redirects: registry.npmmirror.com/follow-redirects/1.15.1
       requires-port: registry.npmmirror.com/requires-port/1.0.0
     transitivePeerDependencies:
       - debug
@@ -9388,8 +9387,9 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  registry.npmmirror.com/unplugin-auto-import/0.8.6:
+  registry.npmmirror.com/unplugin-auto-import/0.8.6_@vueuse+core@8.5.0:
     resolution: {integrity: sha512-QRYwCmSzxZKHu8LQhUpTzF6t1YxYuo4b47e3cmE1kWsF4SQDO22Ysrj5/2BRY3jbYbiTZqOLopymRpov8SAYZQ==, registry: https://registry.nlark.com/, tarball: https://registry.npmmirror.com/unplugin-auto-import/-/unplugin-auto-import-0.8.6.tgz}
+    id: registry.npmmirror.com/unplugin-auto-import/0.8.6
     name: unplugin-auto-import
     version: 0.8.6
     engines: {node: '>=14'}
@@ -9401,6 +9401,7 @@ packages:
     dependencies:
       '@antfu/utils': registry.npmmirror.com/@antfu/utils/0.5.2
       '@rollup/pluginutils': registry.npmmirror.com/@rollup/pluginutils/4.2.1
+      '@vueuse/core': registry.npmmirror.com/@vueuse/core/8.5.0_vue@3.2.36
       local-pkg: registry.npmmirror.com/local-pkg/0.4.1
       magic-string: registry.npmmirror.com/magic-string/0.26.2
       unimport: registry.npmmirror.com/unimport/0.2.6
