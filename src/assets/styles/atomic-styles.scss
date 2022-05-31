@@ -1,21 +1,105 @@
-@mixin card($width, $height) {
-  box-sizing: border-box;
-  padding: 5px 10px;
-  font-weight: 400;
-  box-shadow: 0 2px 6px 1px rgba(95, 151, 225, 0.25);
-  cursor: pointer;
-  width: $width;
-  height: $height;
+$i: 8;
+@while $i < 60 {
+  .fs-#{$i} { font-size: $i * 1px; }
+  .lh-#{$i} { line-height: $i * 1px; }
+  .row-gap-#{$i} { row-gap: $i * 1px; }
+  .column-gap-#{$i} { column-gap: $i * 1px; }
+  $i: $i + 2;
 }
 
-.fs-40 {
-  font-size: 40px;
+$k: 2;
+@while $k < 100 {
+  .row-gap-#{$k} { row-gap: $k * 1px; }
+  .col-gap-#{$k} { column-gap: $k * 1px; }
+  $k: $k + 2;
 }
 
-.fw-500 {
-  font-weight: 500;
-
-  .fs-30 {
-    font-size: 30px;
-  }
+$j: 0;
+@while $j < 100 {
+  .pl-#{$j} { padding-left: $j * 1px; }
+  .pt-#{$j} { padding-top: $j * 1px; }
+  .pr-#{$j} { padding-right: $j * 1px; }
+  .pb-#{$j} { padding-bottom: $j * 1px; }
+  .px-#{$j} { padding-left: $j * 1px; padding-right: $j * 1px; }
+  .py-#{$j} { padding-top: $j * 1px; padding-bottom: $j * 1px; }
+  .p-#{$j} { padding: $j * 1px; }
+  .ml-#{$j} { margin-left: $j * 1px; }
+  .mt-#{$j} { margin-top: $j * 1px; }
+  .mr-#{$j} { margin-right: $j * 1px; }
+  .mb-#{$j} { margin-bottom: $j * 1px; }
+  .mx-#{$j} { margin-left: $j * 1px; margin-right: $j * 1px; }
+  .my-#{$j} { margin-top: $j * 1px; margin-bottom: $j * 1px; }
+  .m-#{$j} { margin: $j * 1px; }
+  .top-#{$j} { top: $j * 1px; }
+  .bottom-#{$j} { bottom: $j * 1px; }
+  .left-#{$j} { left: $j * 1px; }
+  .right-#{$j} { right: $j * 1px; }
+  $j: $j + 4;
 }
+
+.flex { display: flex; }
+.flex-1 { flex: 1; }
+.flex-2 { flex: 2; }
+.flex-3 { flex: 3; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-col { flex-direction: column; }
+.flex-row-start { justify-content: flex-start; }
+.flex-row-center { justify-content: center; }
+.flex-row-end { justify-content: flex-end; }
+.flex-row-between { justify-content: space-between; }
+.flex-row-evenly { justify-content: space-evenly; }
+.flex-col-start { align-items: flex-start; }
+.flex-col-center { align-items: center; }
+.flex-col-end { align-items: flex-end; }
+.flex-center { align-items: center; justify-content: center}
+
+.fw-400 {font-weight: 400;}
+
+.fw-500 {font-weight: 500;}
+
+.fw-700 {font-weight: 700;}
+
+.static {position: static;}
+.absolute {position: absolute;}
+.z-index-1{ z-index: 1}
+.z-index-2{ z-index: 2}
+.z-index-3{ z-index: 3}
+.z-index-4{ z-index: 4}
+.relative {position: relative;}
+.fixed {position: fixed;}
+.sticky {position: sticky;}
+
+.inline-block {display: inline-block;}
+
+$n: 4;
+@while $n < 100 {
+  .top-#{$n} { top: $n * 1px; }
+  .bottom-#{$n} { bottom: $n * 1px; }
+  .left-#{$n} { left: $n * 1px; }
+  .right-#{$n} { right: $n * 1px; }
+  $n: $n + 4;
+}
+
+$m: 4;
+@while $m < 100 {
+  .-top-#{$m} { top: $m * -1px; }
+  .-bottom-#{$m} { bottom: $m * -1px; }
+  .-left-#{$m} { left: $m * -1px; }
+  .-right-#{$m} { right: $m * -1px; }
+  $m: $m + 4;
+}
+
+
+//grid
+$k1: 1;
+
+.grid {
+  display: grid;
+}
+@while $k1 <= 12 {
+  .grid-cols-#{$k1} { grid-template-columns: repeat($k1, minmax(0, 1fr)); }
+  .grid-rows-#{$k1} { grid-template-columns: repeat($k1, minmax(0, 1fr)); }
+  $k1: $k1 + 1;
+}
+
+.place-items-center { place-items: center; }
