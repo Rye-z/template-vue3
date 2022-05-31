@@ -15,6 +15,15 @@ const value = computed(() => {
   {{ value }}
   <div>test</div>
   <div class="fw-500 fs-40">
-    test
+    <div class="fs-30">
+      test
+    </div>
   </div>
+  <div class="test" />
 </template>
+
+<style lang="scss" scoped>
+.test {
+  @include card(100, 200);
+}
+</style>

@@ -15,9 +15,9 @@
 - [x] sass
     - [x] atomic css style
 - [x] unplugin-auto-import(API 按需导入)
-    - [ ] 全局工具函数
-    - [ ] vueuse api
+    - [x] 全局工具函数
     - [x] vue api
+    - [ ] vueuse api
 - [ ] vue-echarts
 
 ## 为什么使用 pnpm?

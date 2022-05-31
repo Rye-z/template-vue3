@@ -28,6 +28,14 @@ module.exports = defineConfig({
       }),
     ],
   },
+  css: {
+    loaderOptions: {
+      scss: {
+        // [CSS 相关 | Vue CLI](https://cli.vuejs.org/zh/guide/css.html#css-modules)
+        additionalData: '@import "~@/assets/styles/main.scss";',
+      },
+    },
+  },
   devServer: {
     proxy: {
       '/api': {
