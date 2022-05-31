@@ -13,4 +13,8 @@ const value = computed(() => {
     type
   </el-button>
   {{ value }}
+  <div>test</div>
+  <div class="fw-500 fs-40">
+    test
+  </div>
 </template>
