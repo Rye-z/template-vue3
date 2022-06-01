@@ -12,13 +12,12 @@
 - [x] vue hooks： VueUse
 - [x] axios
 - [x] unplugin-vue-components(组件按需导入)
-- [x] sass
-    - [x] atomic css style
 - [x] unplugin-auto-import(API 按需导入)
     - [x] 全局工具函数
     - [x] vue api
-    - [ ] vueuse api
-- [ ] vue-echarts
+- [x] normalize.css
+- [x] sass
+  - [x] atomic css style
 
 ## 为什么使用 pnpm?
 
@@ -58,3 +57,5 @@ ref/reactive 等 API 不用导入，可以直接使用。
 - [Home | Pinia](https://pinia.vuejs.org/)
 
 轻量级的状态管理库，比起 vuex 更契合 vue3 的 composition API，且使用更为简洁。
+
+## normalize.css
