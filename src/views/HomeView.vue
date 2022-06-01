@@ -10,5 +10,7 @@ const value = computed(() => {
     click
   </el-button>
   {{ value }}
+  <Share style="color: red; width: 40px" />
+  <Cherry style="width: 40px;" />
 </template>
 
