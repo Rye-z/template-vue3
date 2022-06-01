@@ -4,6 +4,7 @@
 
 ## 模板内容
 
+- [x] TypeScript
 - [x] ESLint
 - [x] Element-Plus
     - [x] Auto import on-demand(按需导入)
@@ -18,6 +19,23 @@
 - [x] normalize.css
 - [x] sass
   - [x] atomic css style
+
+## TypeScript
+
+没有开启严格模式（见 tsconfig.json `strict` 字段），所以不熟悉 TypeScript 也可以先按照 JavaScript 的模式进行开发，可以逐渐熟悉并使用 TS。
+
+注意点：
+
+1. setup 使用 ts
+```vue
+<script setup lang='ts'></script>
+<template></template>
+```
+2. 所有 JS 文件（除 `vue.config.js`）命名使用 `.ts` 后缀
+3. TypeScript 中，vue 模块导入，需要加 `.vue` 后缀
+
+TypeScript 类型体操：
+- [type-challenges/type-challenges: Collection of TypeScript type challenges with online judge](https://github.com/type-challenges/type-challenges)
 
 ## 为什么使用 pnpm?
 
@@ -59,3 +77,5 @@ ref/reactive 等 API 不用导入，可以直接使用。
 轻量级的状态管理库，比起 vuex 更契合 vue3 的 composition API，且使用更为简洁。
 
 ## normalize.css
+
+重置部分浏览器默认样式
