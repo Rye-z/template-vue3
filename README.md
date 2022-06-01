@@ -33,18 +33,28 @@
 
 - [antfu/eslint-config: Anthony's ESLint config presets](https://github.com/antfu/eslint-config)
 
+非常全面的 ESLint 规则，包括 Vue/React/TypeScript/Json/Yaml 等，而且开发体验非常舒适。
+
 ## unplugin-vue-components
 
 - [antfu/unplugin-vue-components: 📲 On-demand components auto importing for Vue](https://github.com/antfu/unplugin-vue-components)
+
+按需导入组件，有很多设置好的 preset，比如：ElementPlusResolver，可以按需导入 Element-Plus 组件，也可以自定义导入组件。
 
 ## unplugin-auto-import
 
 - [antfu/unplugin-auto-import: Auto import APIs on-demand for Vite, Webpack and Rollup](https://github.com/antfu/unplugin-auto-import)
 
+ref/reactive 等 API 不用导入，可以直接使用。
+
 ## VueUse
 
 - [antfu/vueuse: Collection of essential Vue Composition Utilities for Vue 2 and 3](https://github.com/antfu/vueuse)
 
+非常强大的 vue hooks 库，大幅提高开发效率。
+
 ## pinia
 
 - [Home | Pinia](https://pinia.vuejs.org/)
+
+轻量级的状态管理库，比起 vuex 更契合 vue3 的 composition API，且使用更为简洁。
